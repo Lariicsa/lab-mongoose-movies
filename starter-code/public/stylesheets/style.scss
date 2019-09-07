@@ -27,4 +27,15 @@ a {
     color: darkgrey;
     font-weight: 100;
   }
+
+  tr td.is-centered {
+    text-align: right;
+  }
+}
+
+.input {
+  color: darkgrey;
+  &:focus {
+    color: #111;
+  }
 }

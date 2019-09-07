@@ -19,5 +19,12 @@ a {
     vertical-align: middle;
     color: darkgrey;
     font-weight: 100; }
+  .movies tr td.is-centered {
+    text-align: right; }
+
+.input {
+  color: darkgrey; }
+  .input:focus {
+    color: #111; }
 
 /*# sourceMappingURL=style.css.map */

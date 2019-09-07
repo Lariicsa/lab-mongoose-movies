@@ -28,3 +28,22 @@ exports.addMovie = async (req, res) => {
 	await Movie.create({ title, genre, plot })
 	res.redirect('/movies/all')
 }
+
+exports.deleteMovie = async (req, res) => {
+	const { movieid } = req.query
+	const movie = await Movie.findByIdAndRemove(movieid)
+	res.redirect('/movies/all', movie)
+}
+
+exports.editMovieForm = async (req, res) => {
+	const { movieid } = req.query
+	const movie = await Movie.findById(movieid)
+	res.render('movies/edit', movie)
+}
+
+exports.editMovie = async (req, res) => {
+	const { title, genre, plot } = req.body
+	const { movieid } = req.query
+	await	Movie.findByIdAndUpdate(movieid, { title, genre, plot })
+	res.redirect(`/movies/detail/${movieid}`)
+}
