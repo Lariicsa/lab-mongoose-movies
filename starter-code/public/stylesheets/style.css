@@ -1,8 +1,23 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 16px Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #111; }
+
+.movies {
+  width: 100%; }
+  .movies thead tr th.title {
+    width: 72%; }
+  .movies tr td,
+  .movies thead tr th {
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 1px;
+    padding: .2em .75em;
+    vertical-align: middle; }
+  .movies tbody tr th {
+    padding: .2em;
+    vertical-align: middle;
+    color: darkgrey;
+    font-weight: 100; }
 
 /*# sourceMappingURL=style.css.map */
