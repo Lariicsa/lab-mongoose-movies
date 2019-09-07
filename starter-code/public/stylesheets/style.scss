@@ -10,7 +10,7 @@ a {
   width: 100%;
 
   thead tr th.title {
-    width: 72%
+    width: 68%
   }
 
   tr td,
@@ -30,6 +30,9 @@ a {
 
   tr td.is-centered {
     text-align: right;
+    & > form {
+      display: inline;
+    }
   }
 }
 

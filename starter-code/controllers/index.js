@@ -13,9 +13,9 @@ exports.movies = async (req, res, next) => {
 }
 
 exports.movieDetail = async (req, res, next) => {
-  const { id } = req.params;
-  const movies = await Movie.findById(id);
-  res.render('movies/detail', movies);
+  const { id } = req.params
+  const movies = await Movie.findById(id)
+  res.render('movies/detail', movies)
 }
 
 exports.addMovieForm = async (req, res, next) => {
@@ -30,9 +30,9 @@ exports.addMovie = async (req, res) => {
 }
 
 exports.deleteMovie = async (req, res) => {
-	const { movieid } = req.query
-	const movie = await Movie.findByIdAndRemove(movieid)
-	res.redirect('/movies/all', movie)
+  const { id } = req.params
+	const movie = await Movie.findByIdAndRemove(id)
+	res.redirect('/movies/all')
 }
 
 exports.editMovieForm = async (req, res) => {
