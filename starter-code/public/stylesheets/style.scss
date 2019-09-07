@@ -42,3 +42,13 @@ a {
     color: #111;
   }
 }
+
+.card-footer-item {
+  .icon {
+    font-size: 24px;
+    span,
+     {
+      font-size: inherit;
+    }
+  }
+}

@@ -29,4 +29,9 @@ a {
   .input:focus {
     color: #111; }
 
+.card-footer-item .icon {
+  font-size: 24px; }
+  .card-footer-item .icon span {
+    font-size: inherit; }
+
 /*# sourceMappingURL=style.css.map */
